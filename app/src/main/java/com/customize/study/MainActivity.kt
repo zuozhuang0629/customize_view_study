@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.listener.OnItemChildClickListener
 import com.customize.study.chapter_1.Chapter1Activity
+import com.customize.study.chapter_2.Chapter2Activity
 import com.customize.study.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -32,7 +33,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 0 -> {
                     startActivity(Intent(this, Chapter1Activity::class.java))
                 }
-                1 -> {}
+                1 -> {
+                    startActivity(Intent(this, Chapter2Activity::class.java))
+                }
                 2 -> {}
                 3 -> {}
                 else -> {}

@@ -19,12 +19,16 @@ class BaseView @JvmOverloads constructor(
         val paint = Paint()
         //设置画笔颜色
         paint.color = Color.RED
-        //设置填充样式
-        paint.style =Paint.Style.STROKE
+
+//        Paint.Style.FILL:仅填充内部。
+//        Paint.Style.FILL_AND_STROKE:填充内部和描边。
+//        Paint.Style.STROKE:仅描边
+        paint.style = Paint.Style.STROKE
+
         //设置画笔宽度
-        paint.strokeWidth =50F
+        paint.strokeWidth = 50F
 
         //画圆
-        canvas?.drawCircle(190F,200F,150F,paint)
+        canvas?.drawCircle(190F, 200F, 150F, paint)
     }
 }
